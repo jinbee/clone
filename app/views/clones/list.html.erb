@@ -1,0 +1,32 @@
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>つぶやき一覧</h2>
+          <%= notice %>
+          </div>
+
+        <div class="row">
+
+        <% @clone.order("updated_at DESC").each do |clone| %>
+          <div class="col-lg-6">
+            <div class="box wow">
+              <h4 class="title"><%= clone.updated_at.to_formatted_s(:ymd_hi) %></h4>
+              <p class="description"><%= clone.content %></p>
+
+
+               <%= link_to 'EDIT' , edit_clone_path(clone.id) , class: "btn btn-outline-primary" %>
+            <%= link_to 'DELETE' , clone_path(clone.id),method: :delete , data:{confirm:'削除しますか?'} , class: "btn btn-outline-danger pull-right"%>  
+            </div>
+          </div>
+        
+        <% end %>
+
+   
+
+        </div>
+
+      </div>
+    </section><!-- #services -->

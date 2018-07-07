@@ -1,0 +1,21 @@
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+        </div>
+
+
+            <div class="box wow fadeInLeft">
+
+            <%= form_with(model:@clone , url:clones_path,local:true) do |form| %>
+            <%= form.hidden_field :content %>
+            <h4 class="title"><%= @clone.content %></h4>
+            <%= form.submit '投稿', name:'save' , class: "btn btn-outline-primary"  %>
+            <%= form.submit '戻る', name:'back' , class: "btn btn-outline-danger pull-right" %>
+            <% end %>
+            </div>
+
+        </div>
+
+      </div>
+    </sectio

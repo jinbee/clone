@@ -1,0 +1,14 @@
+
+         <% if @clone.errors.any? %>
+             <% @clone.errors.full_messages.each do |msg| %>
+              <div id="errormessage"><%= msg %></div>
+             <% end %>
+         <% end %>
+         <div class="form">
+          <%= form_with(model: @clone , local:true , url: new_or_edit ,class: :contactForm) do |form| %>
+             <div class="form-group">
+               <%= form.text_field :content ,class:"form-control" %>
+             </div>
+            <div class="text-center"><%= form.submit 'POST' , class:"btn btn-primary btn-lg"%>
+          <% end %>
+        </div>

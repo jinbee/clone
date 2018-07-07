@@ -1,0 +1,63 @@
+
+
+  
+    <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <div class="intro-content">
+      <h2>Making <span>your ideas</span><br>happen!</h2>
+      <div>
+        <%= link_to 'つぶやく' , new_clone_path , class: 'btn-projects' %>
+      </div>
+    </div>
+
+
+
+  </section><!-- #intro -->
+  
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="<%= asset_path "about-img.jpg" %>" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>Phase2の大項目課題</h2>
+            <h3>TwitterCloneを作ってみようの巻</h3>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Ruby on Railsを使ったアプリケーションであること</li>
+              <li><i class="ion-android-checkmark-circle"></i> HTML,CSSを使用して、見本程度の最低限のフロント部分（header,footer,topページ）を作成すること。</li>
+              <li><i class="ion-android-checkmark-circle"></i> （JavaScriptは余裕があれば実装する程度で構わない。高度なデザインにしたい場合はbootstrapなどのフレームワークを使用しても構わない。）</li>
+              <li><i class="ion-android-checkmark-circle"></i> tweetの投稿・投稿確認・編集・一覧表示・削除機能があること</li>
+              <li><i class="ion-android-checkmark-circle"></i> 確認画面から投稿画面に戻った時、打ち込んだ内容が保持されるようにすること</li>
+              <li><i class="ion-android-checkmark-circle"></i> 1文字以上140文字以下しかつぶやけないようにすること</li>
+              <li><i class="ion-android-checkmark-circle"></i> 140文字より多い文字数、または内容が空で登録した場合エラーメッセージがでるようにすること</li>
+              <li><i class="ion-android-checkmark-circle"></i> tweetsテーブルは、本文（content）のみカラムを有すること（id,timestampはデフォルトで生成されるのでそのままで良い）</li>
+              <li><i class="ion-android-checkmark-circle"></i> Githubにソースコードを送信し、そのリポジトリのURLを提出すること</li>
+              <li><i class="ion-android-checkmark-circle"></i> Herokuにアップロードしてある状態であること</li>
+              <li><i class="ion-android-checkmark-circle"></i> エラーが出ないようにすること</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+
+
+
+  </main>
+  
+  
+
+
